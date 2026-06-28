@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-page="events">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Under Pressure official concept website" />
+  <title>Event Board | Under Pressure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="index.html" aria-label="Under Pressure home"><span class="brand-glyph">UP</span><span class="brand-copy"><strong>UNDER PRESSURE</strong><small>Official Concept Site</small></span></a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="index.html" data-page="index">Hallway</a><a href="handbook.html" data-page="handbook">Handbook</a><a href="characters.html" data-page="characters">Student Files</a><a href="events.html" data-page="events">Event Board</a><a href="store.html" data-page="store">School Store</a><a href="devroom.html" data-page="devroom">Dev Room</a><a href="team.html" data-page="team">Join Us</a><a href="calendar.html" data-page="calendar">Calendar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sub-hero event-hero">
+      <p class="kicker reveal">Event Board</p>
+      <h1 class="reveal delay-1">A semester is a chain of pressure events.</h1>
+      <p class="lead reveal delay-2">Each event has lore, triggers, choices, and character-specific outcomes. The story is built from consequences, not cutscenes.</p>
+    </section>
+
+    <section class="section board-section expanded-board">
+      <div class="filter-bar reveal" id="eventFilters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="school">School</button>
+        <button data-filter="friends">Friends</button>
+        <button data-filter="family">Family</button>
+        <button data-filter="personal">Personal</button>
+      </div>
+      <div class="board-grid reveal delay-1" id="eventGrid">
+        <article class="pin-card active" data-type="school" data-event="exam"><small>School</small><h3>Exam Week</h3><p>Academic pressure rises. Rest becomes expensive.</p></article>
+        <article class="pin-card" data-type="friends" data-event="project"><small>Friends</small><h3>Group Project Crisis</h3><p>Someone disappears before the deadline.</p></article>
+        <article class="pin-card" data-type="family" data-event="family"><small>Family</small><h3>Expectation Talk</h3><p>A normal dinner becomes a future interview.</p></article>
+        <article class="pin-card" data-type="school" data-event="criticism"><small>School</small><h3>Teacher's Criticism</h3><p>Feedback is public. Shame becomes a status effect.</p></article>
+        <article class="pin-card" data-type="friends" data-event="shift"><small>Friends</small><h3>Relationship Shift</h3><p>The friend group changes without asking.</p></article>
+        <article class="pin-card" data-type="family" data-event="application"><small>Family</small><h3>Application Talk</h3><p>Your future becomes a negotiation.</p></article>
+        <article class="pin-card" data-type="school" data-event="anniversary"><small>School</small><h3>School Anniversary</h3><p>A celebration turns into extra responsibility.</p></article>
+        <article class="pin-card" data-type="personal" data-event="burnout"><small>Personal</small><h3>Burnout Night</h3><p>You finally stop moving, and everything catches up.</p></article>
+        <article class="pin-card" data-type="friends" data-event="club"><small>Friends</small><h3>Club Competition</h3><p>Team spirit meets public ranking.</p></article>
+      </div>
+      <aside class="outcome-panel reveal" id="outcomePanel">
+        <p class="kicker" id="eventTypeLabel">School Event</p>
+        <h2 id="eventTitle">Exam Week</h2>
+        <p id="eventDesc">Academic pressure rises and every hour feels like a tradeoff between progress and collapse.</p>
+        <div class="event-lore-box">
+          <h3>Lore</h3><p id="eventLore"></p>
+          <h3>Player Choices</h3><p id="eventChoices"></p>
+          <h3>Possible Consequence</h3><p id="eventConsequence"></p>
+        </div>
+        <div class="outcome-grid" id="outcomeGrid"></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <strong>UNDER PRESSURE STUDIO</strong>
+      <p>A student-made official concept site for a school-life strategy card game.</p>
+    </div>
+    <div class="footer-grid">
+      <section>
+        <h3>Project Leads</h3>
+        <p><b>Wade</b> — Game Director / System Designer</p>
+        <p><b>Jade</b> — Narrative Designer / Event Writer</p>
+        <p><b>Ken</b> — Art Director / UI Designer</p>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <p>Customer Support: support@underpressure.studio</p>
+        <p>Business Email: contact@underpressure.studio</p>
+        <p>Careers: careers@underpressure.studio</p>
+      </section>
+      <section>
+        <h3>Location</h3>
+        <p>Mingdao High School</p>
+        <p>No. 497, Sec. 1, Zhongshan Rd., Wuri Dist., Taichung City 414, Taiwan</p>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Under Pressure Studio. Concept showcase only.</span>
+      <span>Press Kit · Privacy · Community Guidelines</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

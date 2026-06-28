@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-page="devroom">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Under Pressure official concept website" />
+  <title>Dev Room | Under Pressure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="index.html" aria-label="Under Pressure home"><span class="brand-glyph">UP</span><span class="brand-copy"><strong>UNDER PRESSURE</strong><small>Official Concept Site</small></span></a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="index.html" data-page="index">Hallway</a><a href="handbook.html" data-page="handbook">Handbook</a><a href="characters.html" data-page="characters">Student Files</a><a href="events.html" data-page="events">Event Board</a><a href="store.html" data-page="store">School Store</a><a href="devroom.html" data-page="devroom">Dev Room</a><a href="team.html" data-page="team">Join Us</a><a href="calendar.html" data-page="calendar">Calendar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sub-hero dev-hero">
+      <p class="kicker reveal">Dev Room</p>
+      <h1 class="reveal delay-1">The messy part is part of the design.</h1>
+      <p class="lead reveal delay-2">This room shows the process behind the project: logo meaning, character sketches, AI-assisted visual prototyping, and the design choices that shaped the game identity.</p>
+    </section>
+
+    <section class="section logo-story-section">
+      <article class="final-logo-card reveal">
+        <div class="final-logo-frame"><img src="assets/logo-final.png" alt="Under Pressure final logo"></div>
+        <div class="logo-breakdown">
+          <p class="kicker">Final Logo Story</p>
+          <h2>One logo, three sources of pressure.</h2>
+          <p>The final logo is not just decoration. It compresses the whole game into one symbol: school, family, and choices all stacked above the player.</p>
+          <div class="symbol-list">
+            <div><span>01</span><b>Graduation Cap</b><p>Represents academic pressure, expectations, and the school system that frames the entire game.</p></div>
+            <div><span>02</span><b>Cards</b><p>Represent decisions, branching outcomes, and the feeling that no option is completely safe.</p></div>
+            <div><span>03</span><b>House Charm</b><p>Represents family support and family pressure — the place that should feel safe, but sometimes does not.</p></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section dev-grid refined-dev-grid">
+      <article class="dev-card reveal">
+        <h2>Character Process</h2>
+        <div class="compare-row clean-compare">
+          <figure><img src="assets/characters-sketch.png" alt="Character sketch"><figcaption>Original team sketch</figcaption></figure>
+          <figure><img src="assets/characters-final.png" alt="Final character concept"><figcaption>AI-assisted color prototype</figcaption></figure>
+        </div>
+        <p>Original sketches and character concepts were created by the team. AI-assisted coloring was used as a rapid prototyping tool to test the final visual direction, not to replace the design process.</p>
+      </article>
+      <article class="dev-card reveal delay-1">
+        <h2>Design Principle</h2>
+        <p class="quote">“Lore should not sit beside mechanics. Lore should become mechanics.”</p>
+        <p>That is why Jade's public image, Kevin's recovery, and William's perfectionism are not just personality descriptions; they change how players make choices.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <strong>UNDER PRESSURE STUDIO</strong>
+      <p>A student-made official concept site for a school-life strategy card game.</p>
+    </div>
+    <div class="footer-grid">
+      <section>
+        <h3>Project Leads</h3>
+        <p><b>Wade</b> — Game Director / System Designer</p>
+        <p><b>Jade</b> — Narrative Designer / Event Writer</p>
+        <p><b>Ken</b> — Art Director / UI Designer</p>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <p>Customer Support: support@underpressure.studio</p>
+        <p>Business Email: contact@underpressure.studio</p>
+        <p>Careers: careers@underpressure.studio</p>
+      </section>
+      <section>
+        <h3>Location</h3>
+        <p>Mingdao High School</p>
+        <p>No. 497, Sec. 1, Zhongshan Rd., Wuri Dist., Taichung City 414, Taiwan</p>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Under Pressure Studio. Concept showcase only.</span>
+      <span>Press Kit · Privacy · Community Guidelines</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

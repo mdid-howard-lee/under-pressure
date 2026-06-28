@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-page="index">
+<html lang="en" data-page="characters">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Under Pressure official concept website" />
-  <title>Under Pressure | Official Concept Site</title>
+  <title>Student Files | Under Pressure</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -31,41 +31,38 @@
     </nav>
   </header>
 
+
   <main>
-    <section class="home-hero clean-cover page-hero">
-      <div class="noise"></div>
-      <div class="cover-vignette" aria-hidden="true"></div>
-      <div class="cover-card ghost-one">SANITY -20</div>
-      <div class="cover-card ghost-two">EXAM WEEK</div>
-      <div class="cover-card ghost-three">ASK FOR HELP</div>
-      <div class="cover-center reveal">
-        <img class="hero-logo-main" src="assets/logo-final.png" alt="Under Pressure logo">
-        <p class="kicker">Official Concept Site</p>
-        <h1>Survive school. Manage pressure. Choose who you become.</h1>
-        <p class="lead">A student-life strategy card game about grades, friendships, family expectations, and the cost of every choice.</p>
-        <div class="button-row center-buttons">
-          <a class="button primary" href="handbook.html">Enter the Semester</a>
-          <a class="button secondary" href="events.html">Read Event Board</a>
+    <section class="sub-hero files-hero">
+      <p class="kicker reveal">Student Files</p>
+      <h1 class="reveal delay-1">Three students. Three ways to break.</h1>
+      <p class="lead reveal delay-2">Characters are not classes. They are student mindsets. Their pressure becomes mechanics; their weaknesses become strategy.</p>
+    </section>
+
+    <section class="section dossier-section">
+      <div class="dossier-tabs reveal" role="tablist" aria-label="Character profiles">
+        <button class="active" data-dossier="jade">Jade</button>
+        <button data-dossier="kevin">Kevin</button>
+        <button data-dossier="william">William</button>
+      </div>
+      <div class="dossier-shell reveal delay-1" id="dossierShell">
+        <div class="dossier-art"><img id="dossierImage" src="assets/jade.png" alt="Selected character"></div>
+        <div class="dossier-copy">
+          <p class="file-label" id="dossierRole">OUTGOING STUDENT · SOCIAL ALL-ROUNDER</p>
+          <h2 id="dossierName">Jade</h2>
+          <p id="dossierLore">Everyone knows Jade. She seems balanced, likeable, and naturally good at everything, but her confidence is built on public approval. Criticism does not just hurt her score; it shakes the image she works so hard to protect.</p>
+          <div class="trait-table">
+            <div><span>Advantage</span><strong id="dossierAdvantage">Friend-related events have a high chance of success.</strong></div>
+            <div><span>Disadvantage</span><strong id="dossierWeakness">Sanity decreases faster when facing criticism.</strong></div>
+            <div><span>Special Trait</span><strong id="dossierTrait">Public Image affects the chance of success in social events.</strong></div>
+            <div><span>Game Role</span><strong id="dossierRoleText">Use interpersonal resources, but protect sanity.</strong></div>
+          </div>
+          <div class="signature-card" id="signatureCard"><span>Signature Card</span><b>Smile Through It</b><p>Resolve a social crisis, but lose Sanity.</p></div>
         </div>
       </div>
     </section>
-
-    <section class="entry-grid section-slim">
-      <a class="entry-card reveal" href="handbook.html">
-        <span>01</span><h2>Student Handbook</h2><p>Learn the rules beneath the vibe: resources, turns, card types, and win conditions.</p>
-      </a>
-      <a class="entry-card reveal delay-1" href="characters.html">
-        <span>02</span><h2>Student Files</h2><p>Open dossiers for Jade, Kevin, and William. Same school. Different survival strategy.</p>
-      </a>
-      <a class="entry-card reveal delay-2" href="events.html">
-        <span>03</span><h2>Event Board</h2><p>Explore school, friend, and family events with complete lore and character outcomes.</p>
-      </a>
-    </section>
-
-    <section class="vibe-strip reveal">
-      <p>Every event is a round.</p><p>Every card is a choice.</p><p>Every choice leaves a mark.</p>
-    </section>
   </main>
+
 
   <footer class="site-footer">
     <div class="footer-brand">

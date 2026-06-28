@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-page="index">
+<html lang="en" data-page="team">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Under Pressure official concept website" />
-  <title>Under Pressure | Official Concept Site</title>
+  <title>Join the Team | Under Pressure</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -31,41 +31,39 @@
     </nav>
   </header>
 
+
   <main>
-    <section class="home-hero clean-cover page-hero">
-      <div class="noise"></div>
-      <div class="cover-vignette" aria-hidden="true"></div>
-      <div class="cover-card ghost-one">SANITY -20</div>
-      <div class="cover-card ghost-two">EXAM WEEK</div>
-      <div class="cover-card ghost-three">ASK FOR HELP</div>
-      <div class="cover-center reveal">
-        <img class="hero-logo-main" src="assets/logo-final.png" alt="Under Pressure logo">
-        <p class="kicker">Official Concept Site</p>
-        <h1>Survive school. Manage pressure. Choose who you become.</h1>
-        <p class="lead">A student-life strategy card game about grades, friendships, family expectations, and the cost of every choice.</p>
-        <div class="button-row center-buttons">
-          <a class="button primary" href="handbook.html">Enter the Semester</a>
-          <a class="button secondary" href="events.html">Read Event Board</a>
+    <section class="sub-hero team-hero">
+      <p class="kicker reveal">Join the Team</p>
+      <h1 class="reveal delay-1">We are building a game about pressure — carefully.</h1>
+      <p class="lead reveal delay-2">This is a concept team page that makes the project feel like a real indie studio website: roles, responsibilities, and a future application form.</p>
+    </section>
+
+    <section class="section team-layout">
+      <div class="team-roster reveal">
+        <article><span>01</span><h2>Wade</h2><p>Game Director / System Designer. Leads the core loop, role balance, and pitch direction.</p></article>
+        <article><span>02</span><h2>Ken</h2><p>Art Director / UI Designer. Shapes the character presentation, interface mood, and visual identity.</p></article>
+        <article><span>03</span><h2>Jade</h2><p>Narrative Designer / Event Writer. Builds event lore, character routes, and consequence writing.</p></article>
+      </div>
+      <div class="career-panel reveal delay-1">
+        <h2>Future Roles</h2>
+        <div class="job-list">
+          <button data-job="Narrative Designer">Narrative Designer</button>
+          <button data-job="Card System Designer">Card System Designer</button>
+          <button data-job="UI / Visual Designer">UI / Visual Designer</button>
+          <button data-job="Frontend Developer">Frontend Developer</button>
         </div>
+        <form class="application-form" id="applicationForm">
+          <label>Name <input type="text" placeholder="Your name"></label>
+          <label>Role <input id="roleInput" type="text" placeholder="Select a role above"></label>
+          <label>Why join Under Pressure? <textarea placeholder="Tell us which pressure you want to design."></textarea></label>
+          <label>Which character do you relate to most? <select><option>Jade</option><option>Kevin</option><option>William</option></select></label>
+          <button type="submit">Submit Concept Application</button>
+        </form>
       </div>
     </section>
-
-    <section class="entry-grid section-slim">
-      <a class="entry-card reveal" href="handbook.html">
-        <span>01</span><h2>Student Handbook</h2><p>Learn the rules beneath the vibe: resources, turns, card types, and win conditions.</p>
-      </a>
-      <a class="entry-card reveal delay-1" href="characters.html">
-        <span>02</span><h2>Student Files</h2><p>Open dossiers for Jade, Kevin, and William. Same school. Different survival strategy.</p>
-      </a>
-      <a class="entry-card reveal delay-2" href="events.html">
-        <span>03</span><h2>Event Board</h2><p>Explore school, friend, and family events with complete lore and character outcomes.</p>
-      </a>
-    </section>
-
-    <section class="vibe-strip reveal">
-      <p>Every event is a round.</p><p>Every card is a choice.</p><p>Every choice leaves a mark.</p>
-    </section>
   </main>
+
 
   <footer class="site-footer">
     <div class="footer-brand">
